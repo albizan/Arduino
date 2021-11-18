@@ -1,0 +1,1871 @@
+[
+    {
+        "id": "387c7121981a62d1",
+        "type": "tab",
+        "label": "Esercitazione Esame",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "f842c1a52c930bac",
+        "type": "mqtt in",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-01",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "23789271.e54d6e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 240,
+        "wires": [
+            [
+                "19ae87f006ee803a",
+                "1a9fd29a9b70b11a"
+            ]
+        ]
+    },
+    {
+        "id": "6ac8e88456761e7b",
+        "type": "mqtt in",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-02",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "23789271.e54d6e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "d92aeec79719800b",
+                "2bdf744fbb6666e1"
+            ]
+        ]
+    },
+    {
+        "id": "193e1f8b64a5ada8",
+        "type": "mqtt in",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-03",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "23789271.e54d6e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 360,
+        "wires": [
+            [
+                "f0bb13b64427dc08"
+            ]
+        ]
+    },
+    {
+        "id": "3183d45916f4fe28",
+        "type": "mqtt in",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-04",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "23789271.e54d6e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 420,
+        "wires": [
+            [
+                "5f1ad05839b6fe46"
+            ]
+        ]
+    },
+    {
+        "id": "5a8b543c6a417013",
+        "type": "mqtt in",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-05",
+        "qos": "2",
+        "datatype": "json",
+        "broker": "23789271.e54d6e",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "x": 120,
+        "y": 480,
+        "wires": [
+            [
+                "e077d230157ac8f6"
+            ]
+        ]
+    },
+    {
+        "id": "19ae87f006ee803a",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per mappa",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": "44.962428035626495",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "7.357912672036248",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Cumiana",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "Cumiana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 240,
+        "wires": [
+            [
+                "98b42d8d0f20f464",
+                "de9546cbe478cc71"
+            ]
+        ]
+    },
+    {
+        "id": "d92aeec79719800b",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per mappa",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": " 44.94991463424158",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "7.539966873064992",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "None",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "None",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 300,
+        "wires": [
+            [
+                "98b42d8d0f20f464",
+                "3c30e38b7d6786cb"
+            ]
+        ]
+    },
+    {
+        "id": "f0bb13b64427dc08",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per mappa",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": "44.944415116385535",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "7.48787795259533",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Airasca",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "Airasca",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 360,
+        "wires": [
+            [
+                "98b42d8d0f20f464",
+                "7a3018b4fc885779"
+            ]
+        ]
+    },
+    {
+        "id": "5f1ad05839b6fe46",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per mappa",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": "44.967404803809565",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "7.661619335356513",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Vinovo",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "Vinovo",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 420,
+        "wires": [
+            [
+                "98b42d8d0f20f464",
+                "c9bf742014231311"
+            ]
+        ]
+    },
+    {
+        "id": "e077d230157ac8f6",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per mappa",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.lat",
+                "pt": "msg",
+                "to": "44.99616073029345",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "payload.lon",
+                "pt": "msg",
+                "to": "7.673755763926399",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Moncalieri",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "payload.name",
+                "pt": "msg",
+                "to": "Moncalieri",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 390,
+        "y": 480,
+        "wires": [
+            [
+                "98b42d8d0f20f464",
+                "4eacc12f0e2548d6"
+            ]
+        ]
+    },
+    {
+        "id": "98b42d8d0f20f464",
+        "type": "worldmap",
+        "z": "387c7121981a62d1",
+        "name": "Mappa",
+        "lat": "",
+        "lon": "",
+        "zoom": "",
+        "layer": "OSMG",
+        "cluster": "",
+        "maxage": "",
+        "usermenu": "show",
+        "layers": "show",
+        "panit": "false",
+        "panlock": "false",
+        "zoomlock": "false",
+        "hiderightclick": "false",
+        "coords": "none",
+        "showgrid": "false",
+        "allowFileDrop": "false",
+        "path": "/worldmap",
+        "overlist": "DR,CO,RA,DN,HM",
+        "maplist": "OSMG,OSMC,EsriC,EsriS,EsriT,EsriDG,UKOS,SW",
+        "mapname": "",
+        "mapurl": "",
+        "mapopt": "",
+        "mapwms": false,
+        "x": 750,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "9e2f76413830e7ae",
+        "type": "ui_chart",
+        "z": "387c7121981a62d1",
+        "name": "Monitoraggio",
+        "group": "349d04100015340d",
+        "order": 2,
+        "width": 28,
+        "height": 17,
+        "label": "Monitoraggio",
+        "chartType": "line",
+        "legend": "true",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": "10",
+        "removeOlderPoints": "",
+        "removeOlderUnit": "60",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "outputs": 1,
+        "useDifferentColor": false,
+        "className": "",
+        "x": 1130,
+        "y": 600,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "de9546cbe478cc71",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per grafico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.slm",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 520,
+        "wires": [
+            [
+                "9e2f76413830e7ae"
+            ]
+        ]
+    },
+    {
+        "id": "3c30e38b7d6786cb",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per grafico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.slm",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 560,
+        "wires": [
+            [
+                "9e2f76413830e7ae"
+            ]
+        ]
+    },
+    {
+        "id": "7a3018b4fc885779",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per grafico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.slm",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 600,
+        "wires": [
+            [
+                "9e2f76413830e7ae"
+            ]
+        ]
+    },
+    {
+        "id": "c9bf742014231311",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per grafico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.slm",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 640,
+        "wires": [
+            [
+                "9e2f76413830e7ae"
+            ]
+        ]
+    },
+    {
+        "id": "4eacc12f0e2548d6",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Crea payload per grafico",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "payload.slm",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 830,
+        "y": 680,
+        "wires": [
+            [
+                "9e2f76413830e7ae"
+            ]
+        ]
+    },
+    {
+        "id": "a0a1183c741ab14c",
+        "type": "ui_slider",
+        "z": "387c7121981a62d1",
+        "name": "Cumiana",
+        "label": "Cumiana",
+        "tooltip": "",
+        "group": "d6d21854ae54db23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "150",
+        "max": "300",
+        "step": "10",
+        "className": "",
+        "x": 1580,
+        "y": 360,
+        "wires": [
+            [
+                "c6885d9bcd45681a"
+            ]
+        ]
+    },
+    {
+        "id": "c6885d9bcd45681a",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_cumiana",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 360,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3cd92c05de15a51e",
+        "type": "ui_slider",
+        "z": "387c7121981a62d1",
+        "name": "None",
+        "label": "None",
+        "tooltip": "",
+        "group": "d6d21854ae54db23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "150",
+        "max": "300",
+        "step": "10",
+        "className": "",
+        "x": 1570,
+        "y": 400,
+        "wires": [
+            [
+                "20243db008db076f"
+            ]
+        ]
+    },
+    {
+        "id": "20243db008db076f",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_none",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1760,
+        "y": 400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "20461c1a6adc8dea",
+        "type": "ui_slider",
+        "z": "387c7121981a62d1",
+        "name": "Airasca",
+        "label": "Airasca",
+        "tooltip": "",
+        "group": "d6d21854ae54db23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "150",
+        "max": "300",
+        "step": "10",
+        "className": "",
+        "x": 1580,
+        "y": 440,
+        "wires": [
+            [
+                "31ed260927863b9e"
+            ]
+        ]
+    },
+    {
+        "id": "31ed260927863b9e",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_airasca",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1770,
+        "y": 440,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "186b7be1618ceeff",
+        "type": "ui_slider",
+        "z": "387c7121981a62d1",
+        "name": "Vinovo",
+        "label": "Vinovo",
+        "tooltip": "",
+        "group": "d6d21854ae54db23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "150",
+        "max": "300",
+        "step": "10",
+        "className": "",
+        "x": 1570,
+        "y": 480,
+        "wires": [
+            [
+                "480e68eb73635cfa"
+            ]
+        ]
+    },
+    {
+        "id": "480e68eb73635cfa",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_vinovo",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1770,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ac8fdcf7d9d67cde",
+        "type": "ui_slider",
+        "z": "387c7121981a62d1",
+        "name": "Moncalieri",
+        "label": "Moncalieri",
+        "tooltip": "",
+        "group": "d6d21854ae54db23",
+        "order": 0,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "end",
+        "topic": "topic",
+        "topicType": "msg",
+        "min": "150",
+        "max": "300",
+        "step": "10",
+        "className": "",
+        "x": 1590,
+        "y": 520,
+        "wires": [
+            [
+                "9cc5e75c60ae6c09"
+            ]
+        ]
+    },
+    {
+        "id": "9cc5e75c60ae6c09",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_moncalieri",
+                "pt": "flow",
+                "to": "payload",
+                "tot": "msg"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1780,
+        "y": 520,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1a9fd29a9b70b11a",
+        "type": "switch",
+        "z": "387c7121981a62d1",
+        "name": "Allarme soglia Cumiana",
+        "property": "payload.slm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "s_cumiana",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 370,
+        "y": 900,
+        "wires": [
+            [
+                "d6c4b66281e7b142"
+            ]
+        ]
+    },
+    {
+        "id": "d9a75e932acf1cb9",
+        "type": "ui_toast",
+        "z": "387c7121981a62d1",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Allarme Cumiana",
+        "x": 930,
+        "y": 900,
+        "wires": []
+    },
+    {
+        "id": "d6c4b66281e7b142",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Imposta messaggio di allarme",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Allarme soglia Cumiana",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "Cumiana",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 900,
+        "wires": [
+            [
+                "d9a75e932acf1cb9"
+            ]
+        ]
+    },
+    {
+        "id": "2bdf744fbb6666e1",
+        "type": "switch",
+        "z": "387c7121981a62d1",
+        "name": "Allarme soglia None",
+        "property": "payload.slm",
+        "propertyType": "msg",
+        "rules": [
+            {
+                "t": "gte",
+                "v": "s_none",
+                "vt": "flow"
+            }
+        ],
+        "checkall": "true",
+        "repair": false,
+        "outputs": 1,
+        "x": 360,
+        "y": 940,
+        "wires": [
+            [
+                "07ca66f32a0fb933"
+            ]
+        ]
+    },
+    {
+        "id": "64bdcbac45a8f624",
+        "type": "ui_toast",
+        "z": "387c7121981a62d1",
+        "position": "top right",
+        "displayTime": "2",
+        "highlight": "",
+        "sendall": true,
+        "outputs": 0,
+        "ok": "OK",
+        "cancel": "",
+        "raw": true,
+        "className": "",
+        "topic": "",
+        "name": "Allarme None",
+        "x": 920,
+        "y": 940,
+        "wires": []
+    },
+    {
+        "id": "07ca66f32a0fb933",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Imposta messaggio di allarme",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload",
+                "pt": "msg",
+                "to": "Allarme soglia None",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "topic",
+                "pt": "msg",
+                "to": "None",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 650,
+        "y": 940,
+        "wires": [
+            [
+                "64bdcbac45a8f624"
+            ]
+        ]
+    },
+    {
+        "id": "40084ed69253e91a",
+        "type": "mqtt out",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-01",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "23789271.e54d6e",
+        "x": 1530,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "35afd4f18611710a",
+        "type": "inject",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "1",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"slm\":2,\"temp\":20,\"hum\":100}",
+        "payloadType": "json",
+        "x": 750,
+        "y": 1640,
+        "wires": [
+            [
+                "3b8dc6b92be0a33b",
+                "0d58f7dbc893bad0",
+                "f0a422ce460dd15f",
+                "1e851122ba66f47d",
+                "fde67b3ab8ea58bf"
+            ]
+        ]
+    },
+    {
+        "id": "3b8dc6b92be0a33b",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.slm",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 1700,
+        "wires": [
+            [
+                "40084ed69253e91a"
+            ]
+        ]
+    },
+    {
+        "id": "47013ae4e84a2be0",
+        "type": "mqtt out",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-02",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "23789271.e54d6e",
+        "x": 1530,
+        "y": 1760,
+        "wires": []
+    },
+    {
+        "id": "ab9c0c7de2b5a15a",
+        "type": "mqtt out",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-03",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "23789271.e54d6e",
+        "x": 1530,
+        "y": 1820,
+        "wires": []
+    },
+    {
+        "id": "8a3e78bbc473d13c",
+        "type": "mqtt out",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-04",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "23789271.e54d6e",
+        "x": 1530,
+        "y": 1880,
+        "wires": []
+    },
+    {
+        "id": "32411e7ac5748891",
+        "type": "mqtt out",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "topic": "/itsData-05",
+        "qos": "",
+        "retain": "",
+        "respTopic": "",
+        "contentType": "",
+        "userProps": "",
+        "correl": "",
+        "expiry": "",
+        "broker": "23789271.e54d6e",
+        "x": 1530,
+        "y": 1940,
+        "wires": []
+    },
+    {
+        "id": "0d58f7dbc893bad0",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.slm",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 1760,
+        "wires": [
+            [
+                "47013ae4e84a2be0"
+            ]
+        ]
+    },
+    {
+        "id": "f0a422ce460dd15f",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.slm",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 1820,
+        "wires": [
+            [
+                "ab9c0c7de2b5a15a"
+            ]
+        ]
+    },
+    {
+        "id": "1e851122ba66f47d",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.slm",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 1880,
+        "wires": [
+            [
+                "8a3e78bbc473d13c"
+            ]
+        ]
+    },
+    {
+        "id": "fde67b3ab8ea58bf",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "rules": [
+            {
+                "t": "set",
+                "p": "payload.temp",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.hum",
+                "pt": "msg",
+                "to": "$random()*10",
+                "tot": "jsonata"
+            },
+            {
+                "t": "set",
+                "p": "payload.slm",
+                "pt": "msg",
+                "to": "$random()*100",
+                "tot": "jsonata"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 1060,
+        "y": 1940,
+        "wires": [
+            [
+                "32411e7ac5748891"
+            ]
+        ]
+    },
+    {
+        "id": "d56f1ae36957613d",
+        "type": "inject",
+        "z": "387c7121981a62d1",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "30",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{\"slm\":250,\"temp\":20,\"hum\":100}",
+        "payloadType": "json",
+        "x": 1230,
+        "y": 1640,
+        "wires": [
+            [
+                "40084ed69253e91a",
+                "47013ae4e84a2be0",
+                "ab9c0c7de2b5a15a",
+                "32411e7ac5748891",
+                "8a3e78bbc473d13c"
+            ]
+        ]
+    },
+    {
+        "id": "6622f4098449c1ef",
+        "type": "comment",
+        "z": "387c7121981a62d1",
+        "name": "Invio dati",
+        "info": "",
+        "x": 590,
+        "y": 1600,
+        "wires": []
+    },
+    {
+        "id": "30cd4d17f5e24cde",
+        "type": "aedes broker",
+        "z": "387c7121981a62d1",
+        "name": "Local broker",
+        "mqtt_port": 1883,
+        "mqtt_ws_bind": "port",
+        "mqtt_ws_port": "",
+        "mqtt_ws_path": "",
+        "cert": "",
+        "key": "",
+        "certname": "",
+        "keyname": "",
+        "dburl": "",
+        "usetls": false,
+        "x": 1760,
+        "y": 1700,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "3f0279a22b1d553f",
+        "type": "inject",
+        "z": "387c7121981a62d1",
+        "name": "Startup",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": true,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 100,
+        "wires": [
+            [
+                "8f4a92d6b42c23cc"
+            ]
+        ]
+    },
+    {
+        "id": "8f4a92d6b42c23cc",
+        "type": "change",
+        "z": "387c7121981a62d1",
+        "name": "Inizializza soglie",
+        "rules": [
+            {
+                "t": "set",
+                "p": "s_cumiana",
+                "pt": "flow",
+                "to": "20",
+                "tot": "num"
+            },
+            {
+                "t": "set",
+                "p": "s_none",
+                "pt": "flow",
+                "to": "80",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "s_airasca",
+                "pt": "flow",
+                "to": "120",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "s_vinovo",
+                "pt": "flow",
+                "to": "200",
+                "tot": "str"
+            },
+            {
+                "t": "set",
+                "p": "s_moncalieri",
+                "pt": "flow",
+                "to": "212",
+                "tot": "str"
+            }
+        ],
+        "action": "",
+        "property": "",
+        "from": "",
+        "to": "",
+        "reg": false,
+        "x": 350,
+        "y": 100,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "54881bed240367d5",
+        "type": "comment",
+        "z": "387c7121981a62d1",
+        "name": "Il topic è settato prima",
+        "info": "",
+        "x": 820,
+        "y": 480,
+        "wires": []
+    },
+    {
+        "id": "5edd84cd46c3597e",
+        "type": "comment",
+        "z": "387c7121981a62d1",
+        "name": "Slider per le soglie",
+        "info": "",
+        "x": 1610,
+        "y": 320,
+        "wires": []
+    },
+    {
+        "id": "10355d1eb0f7a9df",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 1,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "145d2177be3765bc",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 3,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "a47dfb2d151713c8",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 4,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6ad244866f45cfcc",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 5,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "27099d0d24016040",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 6,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cddea28d9d54de67",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 7,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f47a3fcbbccf1c7c",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 8,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "cac47bceded7c689",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 9,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9bee61b066f4fe7f",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 10,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0db6b04350628266",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 11,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c1a6855579c5f71d",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 12,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "af9968abf0e2bf47",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 13,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "37e32a4242a12dad",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 14,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5a03a793462f355d",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 15,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aa6c9b7796dfcef1",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 16,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "038c71b4b50a109f",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 17,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "f19a540a2b097c64",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 18,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "54399f8c3fb29f48",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 19,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "46235804519b6d76",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 20,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "53f31a6a067e97cd",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 21,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "e4806ac6545bb9f5",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 22,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "5d4ff476551d7af7",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 23,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "132bcb99c9e0d8ac",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 24,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "41dc327b1fe1c372",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 25,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "090c033c0a36b7f5",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 26,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "97a9e2d1941518cd",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 27,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "c07a062a38149ef2",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 28,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "6e4f116223e36336",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 29,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "bfaf027cdbaf7372",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 30,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "8fce7cfa579d6ef8",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 31,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "0a4421e000e8133f",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 32,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "9107414680f246e5",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 33,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "aab0a53bb41c4578",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 34,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "b4dcf6ae1691eede",
+        "type": "ui_spacer",
+        "z": "387c7121981a62d1",
+        "name": "spacer",
+        "group": "349d04100015340d",
+        "order": 35,
+        "width": 1,
+        "height": 1
+    },
+    {
+        "id": "23789271.e54d6e",
+        "type": "mqtt-broker",
+        "name": "Local broker",
+        "broker": "localhost",
+        "port": "1883",
+        "clientid": "",
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "30",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "sessionExpiry": ""
+    },
+    {
+        "id": "349d04100015340d",
+        "type": "ui_group",
+        "name": "Charts",
+        "tab": "81621601a62b9f1e",
+        "order": 1,
+        "disp": true,
+        "width": 30,
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "d6d21854ae54db23",
+        "type": "ui_group",
+        "name": "Soglie",
+        "tab": "81621601a62b9f1e",
+        "order": 2,
+        "disp": true,
+        "width": "6",
+        "collapse": false,
+        "className": ""
+    },
+    {
+        "id": "81621601a62b9f1e",
+        "type": "ui_tab",
+        "name": "Monitoraggio",
+        "icon": "dashboard",
+        "order": 1,
+        "disabled": false,
+        "hidden": false
+    }
+]
